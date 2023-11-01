@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>dom Learn</title>
+<script>
+   function getData(){
+   let studentInfo = {
+    fname: document.getElementById('fname').value,
+    lname: document.getElementById('lname').value,
+	age: document.getElementById('age').value
+   }
+   if(studentInfo.fname==""){
+   alert('pls enter firstname');
+   }else if(studentInfo.lname==""){
+   alert('pls enter lastname')
+   }else if(studentInfo.age==""){
+   alert('pls enter age')
+   }else
+    console.log(studentInfo.fname,studentInfo.lname,studentInfo.age);
+	
+   }
+   
+</script>
+</head>
+<body>
+<fieldset>
+<label>First Name:</label>
+<input id="fname" type="text"><br><br>
+<label>Last Name:</label>
+<input id="lname" type="text"><br><br>
+<label>Age:</label>
+<input id="age" type="text"><br><br>
+<button onclick="getData()">GET ELEMENT BY ID</button>
+</fieldset>
+</body>
+</html>
